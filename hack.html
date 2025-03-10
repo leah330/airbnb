@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aribnb</title>
+    <link rel="stylesheet" href="hack.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="main-header">
+        <nav>
+            <div class="main-icon">
+                <img src="data:image/png;base64,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" alt="airbnb">
+                <H1>Airbnb</H1>
+            </div>
+            <div class="search-bar">
+                <div class="search-content">
+                    <h1>Anywhere</h1>
+                    <h1>Any week</h1>
+                    <h1>Add guest</h1>
+                    <div class="search-icon">
+                        <i class=" fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="profiles">
+            <h3>Airbnb your home</h3>
+            <i class="fa-solid fa-glole"></i>
+            <div class="accounts">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+        </nav>
+        <div class="hero-header">
+            <div class="nav-links">
+          <nav>
+              <div><i class="fa-solid fa-mug-saucer"></i>
+                <h3>Coffee</h3>
+              </div>
+              <div><i class="fa-solid fa-pepper-hot"></i>
+                <h3>Chilli</h3>
+              </div>
+              <div> <i class="fa-solid fa-wine-glass-empty"></i>
+                <h3>Wine</h3>
+              </div>
+              <div> <i class="fa-solid fa-wine-bottle"></i>
+                <h3>Beer</h3>
+              </div>
+              <div> <i class="fa-solid fa-pizza-slice"></i>
+                <h3>Pizza</h3>
+              </div>
+              <div> <i class="fa-solid fa-drumstick-bite"></i>
+                <h3>Chicken</h3>
+              </div>
+              <div> <i class="fa-solid fa-bacon"></i>
+                <h3>Bacon</h3>
+              </div>
+              <div> <i class="fa-solid fa-hotdog"></i>
+                <h3>Hotdog</h3>
+              </div>
+              <div> <i class="fa-solid fa-apple-whole"></i>
+                <h3>White apple</h3>
+              </div>
+              <div> <i class="fa-solid fa-cheese"></i>
+                <h3>Cheese</h3>
+              </div>
+              <div> <i class="fa-solid fa-burger"></i>
+                <h3>Burgers</h3>
+              </div>
+              <div><i class="fa-solid fa-stroopwafel"></i>
+                <h3>Shawarma</h3>
+              </div>
+              <div> <i class="fa-brands fa-java"></i>
+                <h3>Java</h3>
+              </div>
+              <div> <i class="fa-solid fa-fish"></i>
+                <h3>Fish</h3>
+              </div>
+              <div><i class="fa-solid fa-utensils"></i>
+                <h3>Sun down grill</h3>
+              </div>
+              <div> <i class="fa-solid fa-lemon"></i>
+                <h3>Cocktail</h3>
+              </div>
+              <div> <i class="fa-solid fa-martini-glass-citrus"></i>
+                <h3>Citrus</h3>
+              </div>
+          </nav>
+        </div>
+<div class="filter-links">
+  <div class="filters">
+    <i class="fa-solid fa-sliders"></i>
+    <h3>filters</h3>
+  </div>
+  <div class="taxes">
+    <h3>display total before taxes</h3>
+    <i class="fa-solid fa-toggle-on"></i>
+  </div>
+</div>
+            </div>
+            <div class="card">
+              <div>
+               <div><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="City view of Nairobi, Kenya"></div>
+               <div class="location">
+                  <h4>Nairobi, Kenya</h4>
+                  <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                      <h64>4.9</h6>
+                   </div>   
+               </div>
+               <p>20km west of Nairobi City</p>
+               <p>Nov 16th-Dec20th</p>
+                <p><b>kshs.6500 per night</b></p>
+                <h2>
+                  <a href="Book">Book</a>
+                </h2>
+              </div>  
+                <div>
+                  <img src="https://images.unsplash.com/photo-1582498674105-ad104fcc5784?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="City view of Mumbai, India">
+                  <div class="location">
+                      <h4>Mumbai, India</h4>
+                      <div class="ratings">
+                      <i class="fa-solid fa-star"></i>
+                          <h64>4.9</h6>
+                       </div> 
+                   </div>
+                  <p>20km east of Andhra Pradesh</p>
+                  <p>Nov 16th-Dec20th</p>
+                  <p><b>kshs.7200 per night</b></p>
+                  <h2>
+                    <a href="Book">Book</a>
+                  </h2>
+                </div>
+                <div>
+                  <img src="https://plus.unsplash.com/premium_photo-1661964071015-d97428970584?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG90ZWx8ZW58MHx8MHx8fDA%3D" alt="">
+                  <div class="location">
+                      <h4>Dubai, Khalifa</h4>
+                      <div class="ratings">
+                          <i class="fa-solid fa-star"></i>
+                          <h64>4.9</h6>
+                      </div> 
+                  </div>
+                  <p>Burj Khalifa</p>
+                  <p>Nov 16th-Dec20th</p>
+                  <p><b>kshs.19670 per night</b></p>
+                  <h2><a href="Book">Book</a></h2>
+                </div>
+                <div>
+                  <img src="https://images.unsplash.com/photo-1549294413-26f195200c16?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG90ZWx8ZW58MHx8MHx8fDA%3D" alt="">
+                  <div class="location">
+                      <h4>Rome, Italy</h4>
+                      <div class="ratings">
+                          <i class="fa-solid fa-star"></i>
+                          <h64>4.9</h6>
+                      </div> 
+                  </div>
+                  <p>Oliviero</p>
+                  <p>Nov 16th-Dec20th</p>
+                  <p><b>kshs.12000 per night</b></p>
+                  <h2><a href="Book">Book</a></h2>
+                </div>
+                <div>
+                  <img src="https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhvdGVsfGVufDB8fDB8fHww" alt="">
+                  <div class="location">
+                      <h4>Barcelona, Spain</h4>
+                      <div class="ratings">
+                          <i class="fa-solid fa-star"></i>
+                          <h64>4.9</h6>
+                      </div> 
+                  </div>
+                  <p>Craftsmainship</p>
+                  <p>Nov 16th-Dec20th</p>
+                  <p><b>kshs.13000 per night</b></p>
+                  <h2><a href="Book">Book</a></h2>
+                </div>
+                <div>
+                  <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvdGVsfGVufDB8fDB8fHww" alt="">
+                  <div class="location">
+                      <h4>Paris, France</h4>
+                      <div class="ratings">
+                          <i class="fa-solid fa-star"></i>
+                          <h64>4.9</h6>
+                      </div> 
+                  </div>
+                  <p>Elisabeth</p>
+                  <p>Nov 16th-Dec20th</p>
+                  <p><b>kshs.17200 per night</b></p>
+                  <h2><a href="Book">Book</a></h2>
+                </div> 
+
+            </div>
+            </main> 
+            
+ 
+<div class="main-footer">
+  <div class="main-links">
+    <div class="support">
+      <h2>support</h2>
+    <ol>
+      <li><b>Help center</b></li>
+      <li><b>Anti-discrimination</b></li>
+      <li><b>Disability support</b></li>
+      <li><b>Canceiiation options</b></li>
+      <li><b>Report neighbourhood concern</b></li>
+    </ol>
+    </div>
+    <div class="hosting">
+      <h2>Hosting</h2>
+      <ol>
+        <li><b>Help center</b></li>
+        <li><b>Air cover</b></li>
+        <li><b>Anti-discrimination</b></li>
+        <li><b>Disability support</b></li>
+        <li><b>Cancellation options</b></li>
+        <li><b>Report neighbourhood center</b></li>
+      </ol>
+    </div>
+    <div class="airbnb">
+      <h2>Airbnb</h2>
+      <ol>
+        <li><b>Newsroom</b></li>
+        <li><b>New features</b></li>
+        <li><b>Careers</b></li>
+        <li><b>investors</b></li>
+        <li><b>Gift card</b></li>
+        <li><b>Arbnb.orgemergency stays</b></li>
+      </ol>
+    </div>
+  </div>
+  <hr>
+  <div class="foot">
+    <ol>
+      <li>&copy;2024 Airbnb,Inc</li>
+      <li>Terms</li>
+      <li>Sitemap</li>
+      <li>Privacy</li>
+      <li>your privercy choice</li>
+    </ol>
+    <section>
+      <i class="fa-solid fa-globe"></i>
+      <b>
+        English(us)
+        KES
+      </b>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-square-whatapp"></i>
+    </section>
+  </div>
+</div>
+</body>
+</html>
